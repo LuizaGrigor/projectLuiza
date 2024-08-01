@@ -10,6 +10,9 @@ public class Main {
 
         op.countDownToHundred(5);
         op.countDownBetweenParameters();
+        op.countDownBetweenParameters();
+        op.countDownBetweenParameters();
+        op.countDownBetweenParameters();
 
 
 
