@@ -101,7 +101,6 @@ public class LogicalOp {
             return number2;
         }
     }
-
     public int theLargestNumber (int number1, int number2, int number3) {
         if (compareThelargestNumber(number1,number2) > number3) {
             return compareThelargestNumber(number1, number2);
@@ -158,6 +157,71 @@ public class LogicalOp {
            return;
        }
         System.out.println("Missing condition.");
+    }
+
+    public void allEvenNumbers() {
+        for (int i = 1; i <= 100; i++) {
+            if (i % 2 == 0) {
+                System.out.println(i);
+            }
+        }
+    }
+
+
+    public void allOddNumbers() {
+        for (int i = 1; i <= 100; i++) {
+            if (i % 2 != 0) {
+                System.out.println(i);
+            }
+        }
+    }
+
+    public int addAllNumbers (int startNumber)
+    {
+        if (startNumber > 100) {
+            return 0;
+        }
+        int total = 0;
+
+        for (int i = startNumber; i <=100; i++) {
+            total += i;
+
+        }
+        return total;
+    }
+
+
+    public int upToNumberReceived (int startNumber)
+    {
+        if (startNumber > 100) {
+            return 0;
+        }
+
+        int total = 0;
+        int k = 0;
+
+        for (int i = startNumber; i <=100; i++) {
+            total += i;
+            k++;
+        }
+
+        return total / k;
+    }
+
+
+    public void displayStars()
+    {
+        int noOf = 7;
+
+        for (int i = 0; i < noOf; i++)
+        {
+            for (int j = 0; j < noOf - i; j++)
+            {
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
     }
 
 

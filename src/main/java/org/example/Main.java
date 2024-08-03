@@ -45,14 +45,39 @@ public class Main {
         //ex 11 if
         //System.out.println(logic.theLargestNumber(10,16,5));
 
+        //ex 1 for
+       logic.countToHundred(12);
 
-       // logic.countToHundred(12);
-       // logic.countDownToHundred(450);
-        //logic.countBetweenParameters(3, 1);
-       // logic.countBetweenTwoParameters(1, 12);
+        //ex 2 for
+       logic.countDownToHundred(450);
+
+        //ex 3 for
+        logic.countBetweenParameters(3, 1);
+
+
+        //ex 4 for
+        logic.countBetweenTwoParameters(1, 12);
+
+        //ex 1 while
         //logic.countDownToHundredUpWhile(1000);
+
+        //ex 2 while
         //logic.countDownToHundredWhile(10);
 
+        //ex 5 for
+        logic.allEvenNumbers();
+
+        //ex 6 for
+        logic.allOddNumbers();
+
+        // ex 7
+        System.out.println("Rezultatul este: " + logic.addAllNumbers(98));
+
+        //ex 8
+        System.out.println("Rezultatul este: " + logic.upToNumberReceived(98));
+
+        //ex 9
+        logic.displayStars();
 
 
 
