@@ -124,10 +124,27 @@ public class LogicalOp {
         }
     }
 
+    /**
+     * Problem 4
+     * @param number1
+     * @param number2
+     */
+    public void countBetweenTwoParameters(int number1, int number2) {
+
+       int countNumbers = 0;
+
+       if (number1 > number2) {
+           for(int i = number2; i <= number1; i++) {
+               countNumbers += i;
+           }
+           System.out.println(countNumbers);
+       }
+        System.out.println("Missing condition.");
+    }
 
     public void countBetweenParameters(int number1, int number2) {
 
-        int max = checkBiggerNumber(number1, number2);
+        int max = this.checkBiggerNumber(number1, number2);
         int countNumbers = 0;
         int min = 0;
 
@@ -142,21 +159,6 @@ public class LogicalOp {
         }
 
         System.out.println(countNumbers);
-    }
-
-
-    public void countBetweenTwoParameters(int number1, int number2) {
-
-       int countNumbers = 0;
-
-       if (number1 > number2) {
-           for(int i = number2; i <= number1; i++) {
-               countNumbers += i;
-           }
-           System.out.println(countNumbers);
-           return;
-       }
-        System.out.println("Missing condition.");
     }
 
     public void allEvenNumbers() {
@@ -225,8 +227,8 @@ public class LogicalOp {
     }
 
 
-    public void countDownToHundredUpWhile(int number) {
-
+    public void countDownToHundredUpWhile(int number)
+    {
         while (number >= 100) {
             System.out.println(number);
             number--;
@@ -234,11 +236,134 @@ public class LogicalOp {
     }
 
 
-    public void countDownToHundredWhile(int number) {
-
+    public void countDownToHundredWhile(int number)
+    {
         while (number >= -100) {
             System.out.println(number);
             number--;
         }
     }
+
+
+    public void countdownBetweenTwoNumbers(int number1, int number2)
+    {
+        if (number1 < number2) {
+            System.out.println("Missing condition.");
+            return;
+        }
+        while (number2 >=number1) {
+        System.out.println(number1);
+        number1--;
+        }
+    }
+
+    public void countDownSmallestToLargest( int number1, int number2)
+    {
+
+        int countNumbers = 0;
+
+        if (number1 > number2)
+        {
+            int i = number2;
+            while (i <= number1) {
+                countNumbers += i;
+                i++;
+            }
+            System.out.println(countNumbers);
+
+        } else {
+            System.out.println("Missing condition.");
+        }
+
+    }
+
+    public void countBetweenParametersWhile(int number1, int number2) {
+
+        int max = number1;
+        int countNumbers = 0;
+        int min = 0;
+
+        if (max > number2) {
+            min = number2;
+        } else {
+            max = number2;
+            min = number1;
+        }
+
+        int i = min;
+        while ( i <= max) {
+            countNumbers += i;
+            i++;
+        }
+
+        System.out.println(countNumbers);
+    }
+
+    public void allEvenNumbersWhile()
+    {
+        int i = 1;
+        while (i <= 100)
+        {
+            if (i % 2 == 0)
+            {
+                System.out.println(i);
+            }
+            i++;
+        }
+    }
+
+    public void allOddNumbersWhile()
+    {
+        int i = 1;
+        while ( i <= 100)
+        {
+            if (i % 2 != 0) {
+                System.out.println(i);
+            }
+            i++;
+        }
+    }
+
+    public void exerciseSeven()
+    {
+        int i = 111;
+        int j = 1;
+        int countNumber = 0;
+
+        while (i <= 8899)
+        {
+            countNumber += i;
+            i++;
+            j++;
+        }
+        System.out.println("Rezultatul pentru suma este: " + countNumber);
+        System.out.println("Rezultatul pentru media aritmetica este: " + countNumber/j);
+    }
+
+    public int exerciseEight(int number1, int number2)
+    {
+        int contNumber = 0;
+        int j = 0;
+        int min = number1;
+        int max = number2;
+
+        if (number1 > number2)
+        {
+           max = number1;
+           min = number2;
+        }
+
+        int i = min;
+        while (i <= max)
+        {
+            if (i % 7 == 0) {
+                contNumber += i;
+                j++;
+            }
+            i++;
+        }
+
+        return contNumber / j;
+    }
+
 }
