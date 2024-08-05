@@ -76,28 +76,43 @@ public class Main {
 
 
         //ex 1 while
-        logic.countDownToHundredUpWhile(1000);
+        //logic.countDownToHundredUpWhile(1000);
 
         //ex 2 while
-        logic.countDownToHundredWhile(10);
+        //logic.countDownToHundredWhile(10);
 
         //ex 3 while
-        logic.countDownSmallestToLargest(10, 8);
+        //logic.countDownSmallestToLargest(10, 8);
 
         //ex 4 while
-        logic.countBetweenParametersWhile(8, 10);
+        //logic.countBetweenParametersWhile(8, 10);
 
         //ex 5 while
-        logic.allEvenNumbersWhile();
+        //logic.allEvenNumbersWhile();
 
         //ex 6 while
-        logic.allOddNumbersWhile();
+        //logic.allOddNumbersWhile();
 
         //ex 7 while
-        logic.exerciseSeven();
+        //logic.exerciseSeven();
 
         //ex 8 while
-        System.out.println(logic.exerciseEight(1,28));
+        //System.out.println(logic.exerciseEight(1,28));
+
+        //ex array
+
+       logic.myEvenArray();
+
+        System.out.println("Average :" + logic.myAverageArray(new int[]{5, 6, 8, 9}));
+
+        System.out.println("Is in list: " + logic.isInList(new String[] {"ana","alina","bivol"},"ana"));
+
+        System.out.println("Position of the number: " + logic.posistionOfTheNumber(new int[]{4, 9, 5, 9, 4},5));
+
+        //logic.strangeFormOfArt();
+        logic.myArrayDisplay();
+
+
 
 
 

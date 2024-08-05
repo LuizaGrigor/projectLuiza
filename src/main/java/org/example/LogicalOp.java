@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Arrays;
+
 public class LogicalOp {
     public int checkBiggerNumber(int firstNumber, int secondNumber) {
         if (firstNumber > secondNumber) {
@@ -365,5 +367,95 @@ public class LogicalOp {
 
         return contNumber / j;
     }
+
+    public void myArray ()
+    {
+        int [] myArray = new int [100];
+                    for (int i = 0; i < 100; i++)
+                    {
+                        myArray[i] = i +1;
+                        System.out.println(myArray[i]);
+                    }
+
+    }
+
+
+    public int[] myEvenArray()
+    {
+        int [] myArray = new int [50];
+        {
+            int j = 0;
+            for (int i = 1; i <= 100; i++)
+                if (i % 2 == 0) {
+                    myArray[j] = i ;
+                    System.out.println(myArray[j]);
+                    j++;
+                }
+            return myArray;
+        }
+    }
+
+
+    public int myAverageArray(int [] myArray)
+    {
+        int sum = 0;
+        for (int i = 0; i < myArray.length; i++)
+            {
+                sum += myArray[i];
+
+            }
+
+        return sum/myArray.length;
+    }
+
+
+    public boolean isInList(String[] list1, String secondString)
+    {
+        for (int i = 0; i < list1.length; i++)
+            if (list1[i].equals(secondString))
+                return true;
+        return false;
+    }
+
+    public int posistionOfTheNumber(int [] myArray, int secondNumber)
+    {
+        for (int i = 0; i < myArray.length; i++)
+            if (myArray[i] == secondNumber)
+                return i;
+        return -1;
+    }
+
+
+    public void strangeFormOfArt()
+    {
+        int lenght = 10;
+        for (int i = 0; i < lenght; i++)
+        {
+            int j = 0;
+            for (j = 0; j < lenght; j++)
+            {
+                System.out.print (" -");
+            }
+            System.out.println();
+        }
+
+    }
+
+    public void myArrayDisplay()
+    {
+        String[] myArray = {"-","-","-","-","-","-","-","-","-","-","-"};
+        for (int i = 0; i < 10; i++)
+        {
+            for (int j = 0; j < 10; j++){
+                System.out.print(myArray[j]);
+            }
+            System.out.println();
+            System.out.println();
+
+        }
+
+    }
+
+
 
 }
